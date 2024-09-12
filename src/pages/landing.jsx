@@ -1,7 +1,12 @@
 import React from 'react'
+import Nav from '../layouts/nav/nav'
+import Hero from '../componets/landing/hero'
 
 export default function landing() {
   return (
-    <div>landing</div>
+    <div>
+        <Nav />
+        <Hero  />
+    </div>
   )
 }
