@@ -135,7 +135,7 @@ export default function Hero() {
 
 
 
-<Canvas className=' w-[100%] h-[100%] relative top-14 md:hidden'>
+<Canvas className=' w-[100%] relative top-14 md:hidden' style={{ height: "70vh"}}>
         {/* <Environment preset="forest" /> */}
         <ambientLight />
         <Suspense fallback={null}>
