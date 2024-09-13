@@ -14,7 +14,7 @@ import { useGLTF } from '@react-three/drei'
 export function Model(props) {
   const { nodes, materials } = useGLTF('/scene-transformed.glb')
   return (
-    <group {...props} dispose={null} scale={30}>
+    <group {...props} dispose={null} scale={20}>
       <mesh geometry={nodes.Object_4.geometry} material={materials.Quest_Front} position={[0, 0.009, -0.043]} rotation={[Math.PI / 2, 0, 0]} scale={0.031} />
       <mesh geometry={nodes.Object_5.geometry} material={materials.PaletteMaterial001} position={[0, 0.009, -0.043]} rotation={[Math.PI / 2, 0, 0]} scale={0.031} />
       <mesh geometry={nodes.Object_8.geometry} material={materials.Quest_Foam} position={[0, 0.009, -0.043]} rotation={[Math.PI / 2, 0, 0]} scale={0.031} />
