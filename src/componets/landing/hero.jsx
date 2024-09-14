@@ -97,7 +97,7 @@ export default function Hero() {
 
   return (
     <>
-    <div className='bg-[#171719] flex flex-col md:flex-row justify-center md:justify-between overflow-hidden items-center'>
+    <div className='bg-[#171719] flex flex-col md:flex-row justify-center md:justify-between overflow-hidden items-center md:mt-[-120px]'>
       <div className='flex flex-col gap-7 px-[84px] md:px-[0px] md:pl-[84px]'>
         <h1 className='md:w-[688px] w-[300px] text-center md:text-left font-sans font-semibold text-white text-[40px] md:text-[60px]'>
           Experience The Marvel of Virtual Reality
