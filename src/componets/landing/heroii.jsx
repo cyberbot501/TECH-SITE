@@ -8,7 +8,7 @@ import rating from '../../assets/Group 2.svg'
 export default function heroii() {
   return (
     <div className="bg-[#171719] flex flex-col md:flex-row-reverse justify-center md:justify-between overflow-hidden items-center ">
-      <div className="flex flex-col gap-7 px-[84px] ">
+      <div className="flex flex-col gap-7 px-[84px] justify-center items-center">
         <h1 className="md:w-[688px] w-[300px] text-center md:text-left font-sans font-medium text-white text-[28px] md:text-[48px]">
           High resolution 4k graphics & optimum audio quality applied into Blaq
           VR-headset. High performance and a smooth experience all day long.
