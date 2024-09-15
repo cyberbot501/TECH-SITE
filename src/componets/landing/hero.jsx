@@ -82,23 +82,25 @@ export default function Hero() {
 //   }, []);
 
    
-  useEffect(() => {
-    animate(
-      "#animated-image",  // The ID for the image element
-      { rotate: 360 },
-      {
-        duration: 2,
-        easing: "ease-in-out",
-        repeat: 1,
-        direction: "alternate"
-      } // Animation duration
-    );
-  }, []);
+useEffect(() => {
+  animate(
+    "#animated-image",  // The ID for the image element
+    { 
+      x: ["100vw", "0"], // Start from off-screen (right) and move to its original position
+      scale: [2, 1]      // Optional scaling if you want to scale as well
+    },
+    { 
+      easing: "ease-in-out", // Ease in from the right and ease out as it reaches the final position
+      duration: 1.5 // You can adjust the duration as needed
+    }
+  );
+}, []);
+
 
   return (
     <>
-    <div className='bg-[#171719] flex flex-col md:flex-row justify-center md:justify-between overflow-hidden items-center md:mt-[-120px]'>
-      <div className='flex flex-col gap-7 px-[84px] md:px-[0px] md:pl-[84px]'>
+    <div className='bg-[#171719] flex flex-col md:flex-row justify-center md:justify-center overflow-hidden items-center md:mt-[-120px]'>
+      <div className='flex flex-col gap-7 px-[84px] md:relative left-[154px]'>
         <h1 className='md:w-[688px] w-[300px] text-center md:text-left font-sans font-semibold text-white text-[40px] md:text-[60px]'>
           Experience The Marvel of Virtual Reality
         </h1>
@@ -123,7 +125,7 @@ export default function Hero() {
         id="animated-image"  // Adding ID for animation
         src={fhero}
         alt=""
-        className='md:w-[1163px] w-[100%] h-[100%] md:h-[1000px] relative md:right-52 md:top-10 hidden md:block'
+        className='md:w-[1163px] w-[100%] h-[100%] md:h-[1000px]  relative md:right-[140px] md:top-10 hidden md:block'
       />
 
       {/* <img

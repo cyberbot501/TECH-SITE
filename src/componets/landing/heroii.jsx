@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import chero from "../../assets/Frame 3.svg";
 import fhero from "../../assets/Untitled_design-removebg-preview.png";
 import manager from '../../assets/Untitled.jpeg'
 import sold from '../../assets/24K.svg'
 import rating from '../../assets/Group 2.svg'
+import { animate } from 'motion';
 
-export default function heroii() {
+export default function Heroii() {
+    useEffect(() => {
+        animate(
+          "#animated-images", 
+          { 
+            x: ["-100vw", "0"], 
+            scale: [2, 1]      
+          },
+          { 
+            easing: "ease-in-out", 
+            duration: 1.5 
+          }
+        );
+      }, []);
   return (
-    <div className="bg-[#171719] flex flex-col md:flex-row-reverse justify-center md:justify-between overflow-hidden items-center ">
-      <div className="flex flex-col gap-7 px-[84px] justify-center items-center">
+    <div className="bg-[#171719] flex flex-col md:flex-row-reverse justify-center md:justify-center overflow-hidden items-center ">
+      <div className="flex flex-col gap-7 px-[84px] md:relative md:right-[146px] justify-center items-center">
         <h1 className="md:w-[688px] text-center md:text-left font-sans font-medium text-white text-[28px] md:text-[48px]">
           High resolution 4k graphics & optimum audio quality applied into Blaq
           VR-headset. High performance and a smooth experience all day long.
@@ -41,10 +55,10 @@ export default function heroii() {
       </div>
 
       <img
-        id="animated-image" // Adding ID for animation
+        id="animated-images"
         src={fhero}
         alt=""
-        className="md:w-[1163px] w-[100%] h-[100%] md:h-[1000px] relative md:left-32 md:top-10 hidden md:block"
+        className="md:w-[1163px] w-[100%] h-[100%] md:h-[1000px] relative  md:top-10 hidden md:block"
       />
     </div>
   );
