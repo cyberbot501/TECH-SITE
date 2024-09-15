@@ -15,7 +15,7 @@ import girl from '../../assets/girl.svg'
 
 export default function Advert() {
   return (
-    <div className='bg-[#171719] py-20 md:px-[84px] px-[20px]'>
+    <div className='bg-[#171719] py-20 md:px-[84px] px-[20px] overflow-hidden'>
       <Swiper
         direction={'vertical'}
         pagination={{
