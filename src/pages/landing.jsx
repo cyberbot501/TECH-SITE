@@ -4,6 +4,7 @@ import Hero from '../componets/landing/hero'
 import Heroii from '../componets/landing/heroii'
 import Advert from '../componets/landing/advert'
 import Sadvert from '../componets/landing/sadvert'
+import Dadvert from '../componets/landing/dadvert'
 
 export default function landing() {
   return (
@@ -13,6 +14,7 @@ export default function landing() {
         <Heroii />
         <Advert />
         <Sadvert />
+        <Dadvert />
     </div>
   )
 }
