@@ -40,10 +40,10 @@ export default function Nav() {
 
 
       <ul className={`md:flex flex-row w-[399px] h-[44px] rounded-[25px] justify-evenly items-center bg-[#3B3F4070] hidden`}>
-        <NavLink to='/' className='font-sans font-medium text-[17px] text-[#FFFFFF]'>Home</NavLink>
-        <NavLink to='/about' className='font-sans font-medium text-[17px] text-[#FFFFFF]'>About Us</NavLink>
-        <NavLink to='/products' className='font-sans font-medium text-[17px] text-[#FFFFFF]'>Products</NavLink>
-        <NavLink to='/blog' className='font-sans font-medium text-[17px] text-[#FFFFFF]'>Blog</NavLink>
+        <NavLink to='/' className='font-sans font-medium text-[17px] text-[#FFFFFF] hover:border-[1px] hover:h-[100%] hover:w-[120px] hover:rounded-[20px] hover:bg-[#B0EF9A] hover:text-[black] hover:text-center hover:place-content-center '>Home</NavLink>
+        <NavLink to='/about' className='font-sans font-medium text-[17px] text-[#FFFFFF] hover:border-[1px] hover:h-[100%] hover:w-[120px] hover:rounded-[20px] hover:bg-[#B0EF9A] hover:text-[black] hover:text-center hover:place-content-center '>About Us</NavLink>
+        <NavLink to='/products' className='font-sans font-medium text-[17px] text-[#FFFFFF] hover:border-[1px] hover:h-[100%] hover:w-[120px] hover:rounded-[20px] hover:bg-[#B0EF9A] hover:text-[black] hover:text-center hover:place-content-center '>Products</NavLink>
+        <NavLink to='/blog' className='font-sans font-medium text-[17px] text-[#FFFFFF] hover:border-[1px] hover:h-[100%] hover:w-[120px] hover:rounded-[20px] hover:bg-[#B0EF9A] hover:text-[black] hover:text-center hover:place-content-center'>Blog</NavLink>
       </ul>
 
 

@@ -49,9 +49,18 @@ export default function Dadvert() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-        <SwiperSlide className='yes'>
-          
-         <Canvas className=' w-[100%] relative top-14'  style={{ height: "70vh"}}>
+        <SwiperSlide className='yes bg-[#171719] '>
+        <div className='w-[100%] h-[499px] bg-[#D9D9D910] shadow-2xl rounded-[30px]  relative top-[170px] flex flex-col justify-center items-center gap-5'>
+          <div className='flex flex-col justify-center items-center'>  
+              <h2 className='text-white'>Myriads Pro 3</h2>
+              <p className='text-white'>$450</p>
+          </div>
+
+          <button className='w-[122px] h-[44px] bg-[#B0EF9A] rounded-[25px] text-[17.5px] font-sans font-medium text-[#171719] hidden md:block'>
+        Buy Now
+      </button>
+        </div>
+         <Canvas className=' w-[100%] relative bottom-[520px] '  style={{ height: "70vh"}}>
                  {/* <Environment preset="forest" /> */}
                  <ambientLight />
                  <Suspense fallback={null}>
@@ -71,35 +80,22 @@ export default function Dadvert() {
                {/* <primitive object={/gltf.scene} position={[0, 1, 0]} /> */}
                  
                </Canvas>
+
+               
         </SwiperSlide>
         
-        <SwiperSlide className='yes'>
-          
-          <Canvas className=' w-[100%] relative top-14'  style={{ height: "70vh"}}>
-                  {/* <Environment preset="forest" /> */}
-                  <ambientLight />
-                  <Suspense fallback={null}>
-                    <Model /> 
-                  </Suspense>
-                    {/* <ContactShadows position={[0.1, -1.3, 0]} color="#ffffff" /> */}
-                  <spotLight
-                    position={[10, 15, 10]}
-                    intensity={0.5}
-                    angle={0.1}
-                    penumbra={1}
-                    castShadow
-                  />
-                  <OrbitControls enablePan enableZoom enableRotate autoRotate />
-                  {/* <axesHelper args={[5]} /> */}
-                  <directionalLight position={[3.3, 1.0, 4.4]} intensity={4} />
-                {/* <primitive object={/gltf.scene} position={[0, 1, 0]} /> */}
-                  
-                </Canvas>
-         </SwiperSlide>
+        <SwiperSlide className='yes bg-[#171719]'>
+        <div className='w-[100%] h-[499px] bg-[#D9D9D9] shadow-2xl bg-[#00000090] rounded-[30px]  relative top-[170px] flex flex-col justify-center items-center gap-5'>
+          <div className='flex flex-col justify-center items-center'>  
+              <h2 className='text-white'>Myriads Pro 3</h2>
+              <p className='text-white'>$450</p>
+          </div>
 
-         <SwiperSlide className='yes'>
-          
-         <Canvas className=' w-[100%] relative top-14'  style={{ height: "70vh"}}>
+          <button className='w-[122px] h-[44px] bg-[#B0EF9A] rounded-[25px] text-[17.5px] font-sans font-medium text-[#171719] hidden md:block'>
+        Buy Now
+      </button>
+        </div>
+         <Canvas className=' w-[100%] relative bottom-[520px] '  style={{ height: "70vh"}}>
                  {/* <Environment preset="forest" /> */}
                  <ambientLight />
                  <Suspense fallback={null}>
@@ -119,7 +115,46 @@ export default function Dadvert() {
                {/* <primitive object={/gltf.scene} position={[0, 1, 0]} /> */}
                  
                </Canvas>
+
+               
         </SwiperSlide>
+
+        <SwiperSlide className='yes bg-[#171719]'>
+        <div className='w-[100%] h-[499px] bg-[#D9D9D9] shadow-2xl bg-[#00000090] rounded-[30px]  relative top-[170px] flex flex-col justify-center items-center gap-5 '>
+          <div className='flex flex-col justify-center items-center'>  
+              <h2 className='text-white'>Myriads Pro 3</h2>
+              <p className='text-white'>$450</p>
+          </div>
+
+          <button className='w-[122px] h-[44px] bg-[#B0EF9A] rounded-[25px] text-[17.5px] font-sans font-medium text-[#171719] hidden md:block'>
+        Buy Now
+      </button>
+        </div>
+         <Canvas className=' w-[100%] relative bottom-[520px] '  style={{ height: "70vh"}}>
+                 {/* <Environment preset="forest" /> */}
+                 <ambientLight />
+                 <Suspense fallback={null}>
+                   <Model /> 
+                 </Suspense>
+                   {/* <ContactShadows position={[0.1, -1.3, 0]} color="#ffffff" /> */}
+                 <spotLight
+                   position={[10, 15, 10]}
+                   intensity={0.5}
+                   angle={0.1}
+                   penumbra={1}
+                   castShadow
+                 />
+                 <OrbitControls enablePan enableZoom enableRotate autoRotate />
+                 {/* <axesHelper args={[5]} /> */}
+                 <directionalLight position={[3.3, 1.0, 4.4]} intensity={4} />
+               {/* <primitive object={/gltf.scene} position={[0, 1, 0]} /> */}
+                 
+               </Canvas>
+
+               
+        </SwiperSlide>
+
+        
 
 
         <div className="slider-controler">
